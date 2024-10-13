@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion Detection</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="title">Picture Emotion Detection</h1>
+
+      <!-- Form to upload an image -->
+      <div class="upload-section">
+        <label for="imageUpload" class="upload-label">Choose an image to detect emotion</label>
+        <input type="file" id="imageUpload" accept="image/*" class="image-input">
+      </div>
+      
+      <div id="previewContainer">
+        <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
+      </div>
+
+      <button id="detectEmotionBtn" class="btn">Detect Emotion</button>
+
+      <!-- Display detected emotions -->
+      <div id="emotionResult" class="result-box"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
